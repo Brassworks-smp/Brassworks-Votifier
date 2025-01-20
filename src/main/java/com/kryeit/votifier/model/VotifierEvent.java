@@ -6,7 +6,7 @@ import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.event.IModBusEvent;
 import net.neoforged.neoforge.common.NeoForge;
 
-public class VotifierEvent extends Event implements IModBusEvent {
+public class VotifierEvent extends Event {
 	private final Vote vote;
 
 	public VotifierEvent(Vote vote) {

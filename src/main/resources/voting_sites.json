@@ -1,11 +1,110 @@
 [
   {
-    "slot": 0,
+    "slot": 12,
     "item": "minecraft:stone",
     "name": "Voting Site 1",
     "lore": "This is the first voting site",
-    "count": 1,
+    "link": "https://minecraft.net"
+  },
+  {
+    "slot": 13,
+    "item": "minecraft:dirt",
+    "name": "Voting Site 2",
+    "lore": "This is the second voting site",
+    "count": 2,
+    "link": "https://minecraft.net"
+  },
+  {
+    "slot": 14,
+    "item": "minecraft:diamond_block",
+    "name": "Voting Site 3",
+    "lore": "This is the third voting site",
+    "count": 3,
     "link": "https://minecraft.net",
-    "enchanted": false
+    "enchanted": true
+  },
+  {
+    "slot": 0,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 1,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 2,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 3,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 4,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 5,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 6,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 7,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 8,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 9,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 17,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 18,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 19,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 20,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 21,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 22,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 23,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 24,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 25,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 26,
+    "item": "minecraft:gray_stained_glass_pane"
+  },
+  {
+    "slot": 27,
+    "item": "minecraft:gray_stained_glass_pane"
   }
 ]

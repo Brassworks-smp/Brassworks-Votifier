@@ -19,7 +19,9 @@ public class VotingSitesSimpleContainer extends SimpleContainer {
             if (slot.slot() >= 0 && slot.slot() < size) {
                 ItemStack item = slot.item();
 
-                if (slot.name() != null && !slot.name().isEmpty()) {
+                if (slot.name() == null) {
+                    item.set(DataComponents.ITEM_NAME, null);
+                } else {
                     item.set(DataComponents.ITEM_NAME, Component.literal(slot.name()));
                 }
 

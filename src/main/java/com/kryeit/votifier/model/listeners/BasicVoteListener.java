@@ -32,7 +32,7 @@ import static com.kryeit.votifier.config.ConfigReader.COMMAND;
  * 
  * @author Blake Beaupain
  */
-@EventBusSubscriber(bus = EventBusSubscriber.Bus.MOD, modid = Votifier.MODID)
+@EventBusSubscriber(modid = Votifier.MODID)
 public class BasicVoteListener {
 
 	@SubscribeEvent

@@ -1,6 +1,7 @@
 package com.kryeit.votifier.command;
 
 import com.kryeit.votifier.gui.VotingSitesMenuProvider;
+import com.kryeit.votifier.model.VotifierEvent;
 import com.mojang.brigadier.Command;
 import com.mojang.brigadier.CommandDispatcher;
 import com.mojang.brigadier.context.CommandContext;
