@@ -1,0 +1,11 @@
+[
+  {
+    "slot": 0,
+    "item": "minecraft:stone",
+    "name": "Voting Site 1",
+    "lore": "This is the first voting site",
+    "count": 1,
+    "link": "https://minecraft.net",
+    "enchanted": false
+  }
+]
