@@ -1,9 +1,6 @@
 package com.kryeit.votifier.model;
 
-import com.kryeit.votifier.Votifier;
 import net.neoforged.bus.api.Event;
-import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.fml.event.IModBusEvent;
 import net.neoforged.neoforge.common.NeoForge;
 
 public class VotifierEvent extends Event {

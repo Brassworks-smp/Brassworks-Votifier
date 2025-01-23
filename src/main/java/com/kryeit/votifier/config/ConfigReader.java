@@ -18,7 +18,7 @@ public class ConfigReader {
     public static int PORT;
     public static boolean DEBUG;
     public static String COMMAND;
-    public static String LINK;
+    public static String GUI_TITLE;
 
     private ConfigReader() {
     }
@@ -30,7 +30,7 @@ public class ConfigReader {
         PORT = Integer.parseInt(configObject.getString("port"));
         DEBUG = configObject.getBoolean("debug");
         COMMAND = configObject.getString("command-after-voting");
-        LINK = configObject.getString("voting-link");
+        GUI_TITLE = configObject.getString("gui-title").replace('&', '§');
     }
 
     public static String readOrCopyFile(Path path, String exampleFile) throws IOException {

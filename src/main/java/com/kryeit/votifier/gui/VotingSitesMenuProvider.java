@@ -1,4 +1,5 @@
 package com.kryeit.votifier.gui;
+import com.kryeit.votifier.config.ConfigReader;
 import net.minecraft.network.chat.Component;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.MenuProvider;
@@ -13,7 +14,7 @@ public class VotingSitesMenuProvider implements MenuProvider {
 
     @Override
     public Component getDisplayName() {
-        return Component.literal("Voting Sites");
+        return Component.literal(ConfigReader.GUI_TITLE);
     }
 
     @Override

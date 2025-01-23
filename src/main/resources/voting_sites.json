@@ -3,23 +3,30 @@
     "slot": 12,
     "item": "minecraft:stone",
     "name": "Voting Site 1",
-    "lore": "This is the first voting site",
+    "lore": [
+      "This is the first voting site",
+      "You can vote here"
+    ],
     "link": "https://minecraft.net"
   },
-  {
+  { 
     "slot": 13,
     "item": "minecraft:dirt",
     "name": "Voting Site 2",
-    "lore": "This is the second voting site",
-    "count": 2,
+    "lore": [
+      "This is the second voting site",
+      "You can vote here"
+    ],    "count": 2,
     "link": "https://minecraft.net"
   },
   {
     "slot": 14,
     "item": "minecraft:diamond_block",
     "name": "Voting Site 3",
-    "lore": "This is the third voting site",
-    "count": 3,
+    "lore": [
+      "This is the third voting site",
+      "You can vote here"
+    ],    "count": 3,
     "link": "https://minecraft.net",
     "enchanted": true
   },

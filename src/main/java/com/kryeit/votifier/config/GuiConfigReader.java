@@ -4,8 +4,10 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import com.kryeit.votifier.gui.GuiUtils;
 import com.kryeit.votifier.gui.VotingSiteSlot;
 import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -46,7 +48,13 @@ public class GuiConfigReader {
             String itemString = slotObject.has("item") ? slotObject.get("item").getAsString() : "minecraft:air";
             int count = slotObject.has("count") ? slotObject.get("count").getAsInt() : 1;
             String name = slotObject.has("name") ? slotObject.get("name").getAsString() : "";
-            String lore = slotObject.has("lore") ? slotObject.get("lore").getAsString() : "";
+            JsonArray loreArray = slotObject.has("lore") ? slotObject.get("lore").getAsJsonArray() : new JsonArray();
+
+            List<Component> lore = new ArrayList<>();
+            for (JsonElement loreElement : loreArray) {
+                lore.add(GuiUtils.getFormatted(loreElement.getAsString()));
+            }
+
             String link = slotObject.has("link") ? slotObject.get("link").getAsString() : "https://minecraft.net";
             boolean enchanted = slotObject.has("enchanted") && slotObject.get("enchanted").getAsBoolean();
 

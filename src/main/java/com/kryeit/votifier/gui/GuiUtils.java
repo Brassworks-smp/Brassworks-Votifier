@@ -4,6 +4,8 @@ import com.kryeit.votifier.MinecraftServerSupplier;
 import com.mojang.brigadier.ParseResults;
 import com.mojang.brigadier.StringReader;
 import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
 
 import java.util.List;
 
@@ -21,6 +23,11 @@ public class GuiUtils {
         }
 
         return null;
+    }
+
+    public static MutableComponent getFormatted(String text) {
+        String formattedText = text.replace('&', '§');
+        return Component.literal(formattedText);
     }
 
     public static void executeCommandAsServer(String command) {
