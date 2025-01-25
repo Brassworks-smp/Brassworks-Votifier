@@ -73,7 +73,6 @@ public class Votifier {
 		try {
 			LOGGER.info("Reading config files...");
 			ConfigReader.readFile(Path.of("config/votifier"));
-			GuiConfigReader.readFile(Path.of("config/votifier"));
 		} catch (IOException e) {
 			throw new RuntimeException(e);
 		}
@@ -123,6 +122,12 @@ public class Votifier {
 	public void registerCommands(ServerStartingEvent event)
 	{
 		Vote.register(MinecraftServerSupplier.getServer().getCommands().getDispatcher());
+
+		try {
+			GuiConfigReader.readFile(Path.of("config/votifier"));
+		} catch (IOException e) {
+			throw new RuntimeException(e);
+		}
 	}
 
 	@SubscribeEvent

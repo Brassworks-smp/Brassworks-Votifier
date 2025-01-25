@@ -45,23 +45,11 @@ public class GuiConfigReader {
                 throw new RuntimeException("Missing required field: slot");
             }
 
-            String itemString = slotObject.has("item") ? slotObject.get("item").getAsString() : "minecraft:air";
-            int count = slotObject.has("count") ? slotObject.get("count").getAsInt() : 1;
-            String name = slotObject.has("name") ? slotObject.get("name").getAsString() : "";
-            JsonArray loreArray = slotObject.has("lore") ? slotObject.get("lore").getAsJsonArray() : new JsonArray();
-
-            List<Component> lore = new ArrayList<>();
-            for (JsonElement loreElement : loreArray) {
-                lore.add(GuiUtils.getFormatted(loreElement.getAsString()));
-            }
-
             String link = slotObject.has("link") ? slotObject.get("link").getAsString() : "https://minecraft.net";
-            boolean enchanted = slotObject.has("enchanted") && slotObject.get("enchanted").getAsBoolean();
 
-            Item item = BuiltInRegistries.ITEM.get(ResourceLocation.parse(itemString));
-            ItemStack itemStack = new ItemStack(item, count);
+            ItemStack itemStack = GuiUtils.formatItemStack(slotObject);
 
-            VotingSiteSlot menuSlot = new VotingSiteSlot(slot, itemStack, name, lore, link, enchanted);
+            VotingSiteSlot menuSlot = new VotingSiteSlot(slot, itemStack, link);
             MENU_SLOTS.add(menuSlot);
         }
     }

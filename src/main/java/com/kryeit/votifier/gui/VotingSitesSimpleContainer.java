@@ -16,18 +16,6 @@ public class VotingSitesSimpleContainer extends SimpleContainer {
         for (VotingSiteSlot slot : slots) {
             if (slot.slot() >= 0 && slot.slot() < size) {
                 ItemStack item = slot.item();
-
-                if (slot.name() == null) {
-                    item.set(DataComponents.ITEM_NAME, null);
-                } else {
-                    item.set(DataComponents.ITEM_NAME, GuiUtils.getFormatted(slot.name()));
-                }
-
-                List<Component> lore = slot.lore();
-                item.set(DataComponents.LORE, new ItemLore(lore));
-
-                item.set(DataComponents.ENCHANTMENT_GLINT_OVERRIDE, slot.enchanted());
-
                 this.setItem(slot.slot(), item);
             }
         }

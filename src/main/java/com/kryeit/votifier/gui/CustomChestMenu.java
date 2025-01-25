@@ -66,7 +66,7 @@ public class CustomChestMenu extends AbstractContainerMenu {
         super.clicked(slotId, dragType, clickType, player);
 
         VotingSiteSlot slot = GuiUtils.getVotingSiteSlot(slotId);
-        if (slot == null || slot.name().isEmpty()) return;
+        if (slot == null || slot.item().getDisplayName().getString().isEmpty()) return;
 
         String link = slot.link();
 
@@ -74,7 +74,7 @@ public class CustomChestMenu extends AbstractContainerMenu {
             link = link.replace("%player%", player.getName().getString());
         }
 
-        player.sendSystemMessage(Component.literal(slot.name() + ": " + link).setStyle(Style.EMPTY.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, link))));
+        player.sendSystemMessage(Component.literal(slot.item().getDisplayName().getString() + ": " + link).setStyle(Style.EMPTY.withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, link))));
         player.closeContainer();
     }
 
