@@ -1,7 +1,7 @@
 {
   "required": true,
   "minVersion": "0.8",
-  "package": "com.kryeit.votifier.mixin",
+  "package": "com.brassworks.votifier.mixin",
   "compatibilityLevel": "JAVA_8",
   "refmap": "votifier-for-neoforge.refmap.json",
   "mixins": [
