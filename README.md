@@ -2,7 +2,7 @@
   <img width="200" src="https://github.com/muriplz/votifier-for-neoforge/blob/master/src/main/resources/assets/votifier/icon.png">
 </p>
 
-<h1 align="center">Votifier for Neoforge<br>
+<h1 align="center">Votifier for Brassworks<br>
 	<a href="https://legacy.curseforge.com/minecraft/mc-mods/votifier-for-neo/files"><img src="https://cf.way2muchnoise.eu/versions/votifier-for-neo.svg" alt="Supported Versions"></a>
 	<a href="https://github.com/muriplz/votifier-for-neoforge/blob/master/LICENSE"><img src="https://img.shields.io/github/license/muriplz/votifier-for-neoforge?style=flat&color=900c3f" alt="License"></a>
 	<a href="https://www.curseforge.com/minecraft/mc-mods/votifier-for-neo"><img src="http://cf.way2muchnoise.eu/votifier-for-neo.svg" alt="CF"></a>
