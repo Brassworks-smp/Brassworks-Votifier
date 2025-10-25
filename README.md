@@ -11,7 +11,7 @@
 </h1>
 
 
-This Mod is a fork of <a href="https://github.com/muriplz/votifier-for-neoforge">votifier-for-neoforge by muriplz<a><br><br>
+This Mod is a fork of <a href="https://github.com/muriplz/votifier-for-neoforge">votifier-for-neoforge by muriplz<a><br>
 This mod adds a link between Voting Sites (PlanetMinecraft, etc).
 
 This plugin records the votes made by players, and gives them a reward (runs a command).
