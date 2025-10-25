@@ -16,7 +16,7 @@
  * along with Votifier.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.kryeit.votifier.crypto;
+package com.brassworks.votifier.crypto;
 
 import javax.crypto.Cipher;
 import java.security.PrivateKey;

@@ -1,6 +1,6 @@
-package com.kryeit.votifier.mixin;
+package com.brassworks.votifier.mixin;
 
-import com.kryeit.votifier.MinecraftServerSupplier;
+import com.brassworks.votifier.MinecraftServerSupplier;
 import net.minecraft.server.MinecraftServer;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;

@@ -1,4 +1,4 @@
-package com.kryeit.votifier;
+package com.brassworks.votifier;
 
 import net.minecraft.server.MinecraftServer;
 

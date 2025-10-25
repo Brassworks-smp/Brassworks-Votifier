@@ -1,4 +1,4 @@
-package com.kryeit.votifier.utils;
+package com.brassworks.votifier.utils;
 
 import java.text.ParseException;
 import java.util.*;

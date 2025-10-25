@@ -16,16 +16,16 @@
  * along with Votifier.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.kryeit.votifier.model.listeners;
+package com.brassworks.votifier.model.listeners;
 
-import com.kryeit.votifier.Votifier;
-import com.kryeit.votifier.model.VotifierEvent;
-import com.kryeit.votifier.utils.Utils;
+import com.brassworks.votifier.Votifier;
+import com.brassworks.votifier.model.VotifierEvent;
+import com.brassworks.votifier.utils.Utils;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
 
-import static com.kryeit.votifier.Votifier.LOGGER;
-import static com.kryeit.votifier.config.ConfigReader.COMMAND;
+import static com.brassworks.votifier.Votifier.LOGGER;
+import static com.brassworks.votifier.config.ConfigReader.COMMAND;
 
 /**
  * A basic vote listener for demonstration purposes.

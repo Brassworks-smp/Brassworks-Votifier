@@ -1,6 +1,6 @@
-package com.kryeit.votifier.config;
+package com.brassworks.votifier.config;
 
-import com.kryeit.votifier.utils.JSONObject;
+import com.brassworks.votifier.utils.JSONObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

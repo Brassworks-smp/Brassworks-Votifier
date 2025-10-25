@@ -1,6 +1,6 @@
-package com.kryeit.votifier.utils;
+package com.brassworks.votifier.utils;
 
-import com.kryeit.votifier.MinecraftServerSupplier;
+import com.brassworks.votifier.MinecraftServerSupplier;
 import com.mojang.brigadier.ParseResults;
 import com.mojang.brigadier.StringReader;
 import net.minecraft.commands.CommandSourceStack;

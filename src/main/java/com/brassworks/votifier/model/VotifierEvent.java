@@ -1,4 +1,4 @@
-package com.kryeit.votifier.model;
+package com.brassworks.votifier.model;
 
 import net.neoforged.bus.api.Event;
 import net.neoforged.neoforge.common.NeoForge;

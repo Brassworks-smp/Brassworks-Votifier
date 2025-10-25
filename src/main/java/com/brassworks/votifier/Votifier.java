@@ -16,14 +16,12 @@
  * along with Votifier.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.kryeit.votifier;
+package com.brassworks.votifier;
 
-import com.kryeit.votifier.command.Vote;
-import com.kryeit.votifier.config.ConfigReader;
-import com.kryeit.votifier.config.GuiConfigReader;
-import com.kryeit.votifier.crypto.RSAIO;
-import com.kryeit.votifier.crypto.RSAKeygen;
-import com.kryeit.votifier.net.VoteReceiver;
+import com.brassworks.votifier.config.ConfigReader;
+import com.brassworks.votifier.crypto.RSAIO;
+import com.brassworks.votifier.crypto.RSAKeygen;
+import com.brassworks.votifier.net.VoteReceiver;
 import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
@@ -116,18 +114,6 @@ public class Votifier {
 		}
 
 		NeoForge.EVENT_BUS.register(this);
-	}
-
-	@SubscribeEvent
-	public void registerCommands(ServerStartingEvent event)
-	{
-		Vote.register(MinecraftServerSupplier.getServer().getCommands().getDispatcher());
-
-		try {
-			GuiConfigReader.readFile(Path.of("config/votifier"));
-		} catch (IOException e) {
-			throw new RuntimeException(e);
-		}
 	}
 
 	@SubscribeEvent

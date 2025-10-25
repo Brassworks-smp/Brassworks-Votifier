@@ -16,12 +16,12 @@
  * along with Votifier.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-package com.kryeit.votifier.net;
+package com.brassworks.votifier.net;
 
-import com.kryeit.votifier.Votifier;
-import com.kryeit.votifier.crypto.RSA;
-import com.kryeit.votifier.model.Vote;
-import com.kryeit.votifier.model.VotifierEvent;
+import com.brassworks.votifier.Votifier;
+import com.brassworks.votifier.crypto.RSA;
+import com.brassworks.votifier.model.Vote;
+import com.brassworks.votifier.model.VotifierEvent;
 
 import javax.crypto.BadPaddingException;
 import java.io.BufferedWriter;
@@ -34,7 +34,7 @@ import java.net.SocketException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import static com.kryeit.votifier.Votifier.VERSION;
+import static com.brassworks.votifier.Votifier.VERSION;
 
 /**
  * The vote receiving server.
