@@ -12,27 +12,4 @@
 
 
 This Mod is a fork of <a href="https://github.com/muriplz/votifier-for-neoforge">votifier-for-neoforge by muriplz<a><br>
-This mod adds a link between Voting Sites (PlanetMinecraft, etc).
-
-This plugin records the votes made by players, and gives them a reward (runs a command).
-
-It's a really simple mod:
-- Creates public & private keys inside `/mods/votifier/` folder
-- Creates a votifier.json inside `/config/votifier/` folder
-
-This votifier.json is:
-```json
-{
-  "host": "0.0.0.0",
-  "port": "8192",
-  "debug": false,
-  "command-after-voting": "give %player% diamond 1",
-  "gui-title": "&6Voting GUI"
-}
-```
-
-### To set up the Votifier:
-1) Set "host" to your server IP, in most cases leave it as "0.0.0.0", it's the local IP.
-2) Open your port 8192. If you are using a hosting service, you may need to open it in the control panel or open a support ticket.
-3) Fill the configuration on the Voting site, adding the PUBLIC key, NOT the PRIVATE.
-4) Test with [MineStatus Votifier Tester](https://minestatus.net/tools/votifier)
+This mod adds a link between Voting Sites (PlanetMinecraft, etc) used on the <a href="https://brassworks.572.at/">Brassworks SMP<a>.
