@@ -1,5 +1,4 @@
 <div style="text-align: center;">
-  <img width="200" src="https://github.com/muriplz/votifier-for-neoforge/blob/master/src/main/resources/assets/votifier/icon.png" alt="Brassworks Votifier Icon">
   <h1>Brassworks Votifier</h1>
 </div>
 
