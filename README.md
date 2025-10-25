@@ -12,4 +12,4 @@
 
 
 This Mod is a fork of <a href="https://github.com/muriplz/votifier-for-neoforge">votifier-for-neoforge by muriplz<a>,<br>
-it adds a link between Voting Sites (PlanetMinecraft, etc) used on the <a href="https://brassworks.572.at/">Brassworks SMP<a>.
+it adds a link between Voting Sites (PlanetMinecraft, etc.) and a Minecraft Server. Used on the <a href="https://brassworks.572.at/">Brassworks SMP<a>.
