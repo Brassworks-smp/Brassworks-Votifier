@@ -34,6 +34,3 @@ This votifier.json is:
 2) Open your port 8192. If you are using a hosting service, you may need to open it in the control panel or open a support ticket.
 3) Fill the configuration on the Voting site, adding the PUBLIC key, NOT the PRIVATE.
 4) Test with [MineStatus Votifier Tester](https://minestatus.net/tools/votifier)
-
-### Voting GUI:
-Opens when using /vote, and it's configurable in `config/votifier/voting_sites.json`. Use formatting like &6&l (bold and gold color) in the lore, name or gui title. 
