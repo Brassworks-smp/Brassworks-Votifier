@@ -17,8 +17,9 @@ public class ConfigReader {
     public static String HOST;
     public static int PORT;
     public static boolean DEBUG;
-    public static String COMMAND;
-    public static String GUI_TITLE;
+    public static String SITE1;
+    public static String SITE2;
+    public static String SITE3;
 
     private ConfigReader() {
     }
@@ -29,8 +30,9 @@ public class ConfigReader {
         HOST = configObject.getString("host");
         PORT = Integer.parseInt(configObject.getString("port"));
         DEBUG = configObject.getBoolean("debug");
-        COMMAND = configObject.getString("command-after-voting");
-        GUI_TITLE = configObject.getString("gui-title").replace('&', '§');
+        SITE1 = configObject.getString("site1");
+        SITE2 = configObject.getString("site2");
+        SITE3 = configObject.getString("site3");
     }
 
     public static String readOrCopyFile(Path path, String exampleFile) throws IOException {

@@ -2,6 +2,7 @@
   "host": "0.0.0.0",
   "port": "8192",
   "debug": false,
-  "command-after-voting": "give %player% diamond 1",
-  "gui-title": "&6Voting GUI"
+  "Site1": "minecraftiplist",
+  "Site2": "minecraftservers.org",
+  "Site3": "minecraft menu"
 }

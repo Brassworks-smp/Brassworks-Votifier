@@ -26,9 +26,12 @@ import net.minecraft.resources.ResourceLocation;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.neoforge.common.NeoForge;
+import net.neoforged.neoforge.event.server.ServerStartingEvent;
 import net.neoforged.neoforge.event.server.ServerStoppingEvent;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import net.minecraft.server.MinecraftServer;
 
 import java.io.File;
 import java.io.IOException;
@@ -114,6 +117,17 @@ public class Votifier {
 
 		NeoForge.EVENT_BUS.register(this);
 	}
+
+    private MinecraftServer server;
+
+    @SubscribeEvent
+    public void onServerStarting(ServerStartingEvent event) {
+        this.server = event.getServer();
+    }
+
+    public MinecraftServer getServer() {
+        return server;
+    }
 
 	@SubscribeEvent
 	public void onServerStopping(ServerStoppingEvent event) {
